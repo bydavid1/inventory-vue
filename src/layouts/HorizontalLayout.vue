@@ -39,7 +39,7 @@
       <!-- {{-- if full width is required--}} -->
       <div v-bind:class="[configData.extendApp == true ? 'px-0' : 'content-wrapper ']">
         <div class="content-header row" v-if="configData.pageHeader === true">
-          <Breadcrumbs/>
+          <Breadcrumb/>
         </div>
 
         <div class="content-body">
@@ -52,7 +52,7 @@
     <div class="customizer d-none d-md-block" v-if="configData.isCustomizer === true">
         <a class="customizer-close" href="#"><i class="bx bx-x"></i></a>
         <a class="customizer-toggle" href="#"><i class="bx bx-cog bx bx-spin white"></i></a>
-        <customizer/>
+        <Customizer/>
     </div>
     <!-- End: Customizer-->
 
