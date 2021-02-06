@@ -31,7 +31,7 @@
                   <div class="content-header row">
                   </div>
                   <div class="content-body">
-                    Footer<slot name="content"><slot>
+                    Footer<slot name="content"></slot>
                   </div>
               </div>
           </div>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="content-body">
-          <slot name="content"><slot>
+          <slot name="content"></slot>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
     <Footer/>
     <!-- END: Footer-->
 
-    <Scripts/>
+    <!-- <Scripts/> -->
   </body>
   <!-- END: Body-->
 </template>

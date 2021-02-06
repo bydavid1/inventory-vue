@@ -25,7 +25,7 @@
   <div class="content-area-wrapper" v-if="configData.isContentSidebar === true">
     <div class="sidebar-left">
       <div class="sidebar">
-                        <slot name="sidebar-content"></slot>
+        <slot name="sidebar-content"></slot>
       </div>
     </div>
     <div class="content-right">
@@ -34,7 +34,7 @@
         <div class="content-header row">
         </div>
         <div class="content-body">
-          <slot name="content"><slot>
+          <slot name="content"></slot>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
         <Breadcrumb/>
       </div>
     <div class="content-body">
-          <slot name="content"><slot>
+          <slot name="content"></slot>
     </div>
   </div>
   </div>

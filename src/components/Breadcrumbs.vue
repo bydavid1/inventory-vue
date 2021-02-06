@@ -5,7 +5,7 @@
             <div class="row breadcrumbs-top">
                 <div class="col-6">
                     <h4 class="content-header-title float-left pr-1 mb-0">
-                      <slot name="breadcrumb-title"><slot>
+                      <slot name="breadcrumb-title"></slot>
                     </h4>
                     <div class="breadcrumb-wrapper col-12">
                         <ol class="breadcrumb p-0 mb-0">
