@@ -30,5 +30,8 @@
 <script>
 export default {
   name: 'Scripts',
+  computed: {
+    configData() { return this.$store.state.configData; },
+  },
 };
 </script>

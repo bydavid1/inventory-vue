@@ -277,11 +277,8 @@
 <script>
 export default {
   name: 'Sidebar',
-  props: {
-    configData: {
-      type: Object,
-      required: true,
-    },
+  computed: {
+    configData() { return this.$store.state.configData; },
   },
 };
 </script>

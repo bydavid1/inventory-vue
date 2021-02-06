@@ -22,5 +22,8 @@
 <script>
 export default {
   name: 'Footer',
+  computed: {
+    configData() { return this.$store.state.configData; },
+  },
 };
 </script>

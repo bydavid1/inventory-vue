@@ -19,7 +19,7 @@
     <VerticalLayout v-if="configData.mainLayoutType == 'vertical-menu'"/>
     <HorizontalLayout v-else/>
      <!-- {{-- if mainLaoutType is empty or not set then its print below line --}} -->
-     <h1>{alert('{'mainLayoutType Option is empty in config custom.php file.'')}</h1>
+     <h1>{{alert('mainLayoutType Option is empty in config custom.php file.')}}</h1>
 
 </html>
 </template>
@@ -36,5 +36,8 @@ export default {
     HorizontalLayout,
     VerticalLayout,
   ],
+  computed: {
+    configData() { return this.$store.state.configData; },
+  },
 };
 </script>

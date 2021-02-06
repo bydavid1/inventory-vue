@@ -152,15 +152,8 @@
 <script>
 export default {
   name: 'HorizontalNavbar',
-  props: {
-    configData: {
-      type: Object,
-      required: true,
-    },
-    user: {
-      type: Object,
-      required: true,
-    },
+  computed: {
+    configData() { return this.$store.state.configData; },
   },
 };
 </script>

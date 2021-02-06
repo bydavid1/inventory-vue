@@ -78,12 +78,6 @@ import Scripts from '../components/Scripts.vue';
 
 export default {
   name: 'HorizontalLayout',
-  props: {
-    configData: {
-      type: Object,
-      required: true,
-    },
-  },
   components: [
     HorizontalNavbar,
     Sidebar,
@@ -92,5 +86,8 @@ export default {
     Customizer,
     Scripts,
   ],
+  computed: {
+    configData() { return this.$store.state.configData; },
+  },
 };
 </script>
