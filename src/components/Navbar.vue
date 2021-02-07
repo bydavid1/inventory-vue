@@ -1,6 +1,6 @@
 <template>
   <!-- {{-- navabar  --}} -->
-  <div class="header-navbar-shadow"></div>
+<!-- aqui elimine -->
   <nav
     v-bind:class="[
       'header-navbar',

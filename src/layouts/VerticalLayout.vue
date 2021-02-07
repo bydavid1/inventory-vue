@@ -16,6 +16,7 @@
   <!-- END: Header-->
 
   <!-- BEGIN: Main Menu-->
+  <div class="header-navbar-shadow"></div>
   <Sidebar/>
   <!-- END: Main Menu-->
 

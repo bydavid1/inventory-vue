@@ -153,14 +153,15 @@
     <div class="navbar-header d-xl-none d-block">
       <ul class="nav navbar-nav flex-row">
         <li class="nav-item mr-auto">
-          <a class="navbar-brand" href="{{asset('/')}}">
+          <a class="navbar-brand" href="/">
             <div class="brand-logo">
-              <img src="{{asset('assets/media/logos/logo-light.png')}}" class="logo" alt="" />
+              <img src="assets/media/logos/logo-light.png" class="logo" alt="" />
             </div>
-            <h2 class="brand-text mb-0">
-              @if(!empty($configData['templateTitle']) && isset($configData['templateTitle']))
-              {{ $configData['templateTitle'] }}
-              @else Frest @endif
+            <h2 class="brand-text mb-0" v-if="configData.templateTitle">
+              {{ configData.templateTitle }}
+            </h2>
+            <h2 class="brand-text mb-0" v-else>
+              MOKPOS
             </h2>
           </a>
         </li>
@@ -181,7 +182,7 @@
         data-icon-style="filled"
       >
         <li class="nav-item sidebar-group-active active">
-          <a class="nav-link" href="{{ route('home') }}">
+          <a class="nav-link" href="home">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="desktop"
@@ -192,7 +193,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('suppliers') }}">
+          <a class="nav-link" href="suppliers">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="list"
@@ -203,7 +204,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('products') }}">
+          <a class="nav-link" href="products">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="thumbnails-big"
@@ -214,7 +215,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('customers') }}">
+          <a class="nav-link" href="customers">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="users"
@@ -225,7 +226,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('sales') }}">
+          <a class="nav-link" href="sales">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="shoppingcart"
@@ -236,7 +237,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('purchases') }}">
+          <a class="nav-link" href="purchases">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="us-dollar"
@@ -247,7 +248,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('kardex') }}">
+          <a class="nav-link" href="kardex">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="truck"
@@ -258,7 +259,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('home') }}">
+          <a class="nav-link" href="home">
             <i
               class="menu-livicon livicon-evo-holder"
               data-icon="pie-chart"

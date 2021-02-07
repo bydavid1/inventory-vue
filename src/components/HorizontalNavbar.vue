@@ -14,9 +14,9 @@
     <div class="navbar-header d-xl-block d-none">
       <ul class="nav navbar-nav flex-row">
         <li class="nav-item">
-          <a class="navbar-brand" href="{{asset('/')}}">
+          <a class="navbar-brand" href="/">
             <div class="brand-logo">
-              <img src="{{asset('assets/media/logos/logo-light.png')}}" class="logo" alt="" />
+              <img src="assets/media/logos/logo-light.png" class="logo" alt="" />
             </div>
             <h2 class="brand-text mb-0" v-if="configData.templateTitle">
               {{ configData.templateTitle }}
@@ -120,7 +120,7 @@
                 <span
                   ><img
                     class="round"
-                    src="{{asset('assets/media/user.jpg')}}"
+                    src="assets/media/user.jpg"
                     alt="avatar"
                     height="40"
                     width="40"
